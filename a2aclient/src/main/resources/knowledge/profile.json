@@ -1,0 +1,25 @@
+{
+  "owner": {
+    "firstName": "Matej",
+    "lastName": "Matić",
+    "email": "matej.matic@example.com",
+    "phone": "+385 91 000 0000",
+    "company": "Personal AI Labs",
+    "position": "Software Developer",
+    "location": "Zagreb, Croatia",
+    "timezone": "Europe/Zagreb",
+    "preferredLanguage": "Croatian",
+    "bio": "Software developer passionate about AI, automation, and building innovative solutions. Expert in Java, Spring Boot, and modern web technologies."
+  },
+  "preferences": {
+    "communicationStyle": "professional",
+    "defaultGreeting": "Hi",
+    "defaultSignature": "BR, Matej",
+    "workingHours": {
+      "start": "09:00",
+      "end": "17:00",
+      "timezone": "Europe/Zagreb"
+    }
+  }
+}
+

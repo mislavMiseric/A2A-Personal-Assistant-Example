@@ -1,0 +1,42 @@
+[
+  {
+    "id": "project-alpha",
+    "name": "Project Alpha",
+    "description": "Enterprise CRM system with AI-powered customer insights",
+    "client": "TechCorp d.o.o.",
+    "contactPerson": "marko-markovic",
+    "status": "active",
+    "startDate": "2024-01-15",
+    "expectedEndDate": "2025-06-30",
+    "technologies": ["Java", "Spring Boot", "Vaadin", "PostgreSQL", "OpenAI"],
+    "budget": "150000 EUR",
+    "notes": "High priority project. Monthly progress meetings on first Monday."
+  },
+  {
+    "id": "project-beta",
+    "name": "Mobile App Redesign",
+    "description": "Complete UX overhaul of existing mobile application",
+    "client": "StartupHub",
+    "contactPerson": "ivan-ivic",
+    "status": "planning",
+    "startDate": "2025-02-01",
+    "expectedEndDate": "2025-08-31",
+    "technologies": ["React Native", "TypeScript", "Firebase"],
+    "budget": "80000 EUR",
+    "notes": "Waiting for final design approval from Ana."
+  },
+  {
+    "id": "project-gamma",
+    "name": "Legal Document Automation",
+    "description": "AI-powered system for generating and reviewing legal documents",
+    "client": "Petrić & Partners Law Firm",
+    "contactPerson": "petra-petric",
+    "status": "completed",
+    "startDate": "2024-03-01",
+    "expectedEndDate": "2024-11-30",
+    "technologies": ["Python", "OpenAI", "FastAPI", "React"],
+    "budget": "95000 EUR",
+    "notes": "Successfully delivered. Client very satisfied. Potential for phase 2."
+  }
+]
+

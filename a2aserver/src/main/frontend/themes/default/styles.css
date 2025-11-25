@@ -1,0 +1,222 @@
+/* Custom theme for A2A Form Assistant */
+
+:root {
+  /* Primary colors - Deep teal/cyan */
+  --primary-hue: 175;
+  --primary-saturation: 65%;
+  
+  /* Override Lumo primary color */
+  --lumo-primary-color-50pct: hsla(var(--primary-hue), var(--primary-saturation), 42%, 0.5);
+  --lumo-primary-color-10pct: hsla(var(--primary-hue), var(--primary-saturation), 42%, 0.1);
+  --lumo-primary-color: hsl(var(--primary-hue), var(--primary-saturation), 42%);
+  --lumo-primary-text-color: hsl(var(--primary-hue), var(--primary-saturation), 35%);
+  --lumo-primary-contrast-color: #fff;
+  
+  /* Custom accent */
+  --accent-color: hsl(340, 75%, 55%);
+  --accent-color-light: hsl(340, 75%, 65%);
+  
+  /* Backgrounds */
+  --app-bg: linear-gradient(135deg, hsl(220, 25%, 97%) 0%, hsl(200, 20%, 94%) 100%);
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+  
+  /* Typography */
+  --lumo-font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* App background */
+html {
+  background: var(--app-bg);
+  min-height: 100vh;
+}
+
+/* Main layout styling */
+vaadin-app-layout {
+  --vaadin-app-layout-drawer-overlay-background: rgba(0, 0, 0, 0.4);
+}
+
+vaadin-app-layout::part(drawer) {
+  background: linear-gradient(180deg, hsl(var(--primary-hue), 45%, 25%) 0%, hsl(var(--primary-hue), 50%, 18%) 100%);
+  border-right: none;
+  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Drawer header styling */
+vaadin-app-layout::part(drawer) > div:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Side nav styling */
+vaadin-side-nav {
+  --lumo-contrast-10pct: rgba(255, 255, 255, 0.1);
+}
+
+vaadin-side-nav-item {
+  --lumo-contrast-10pct: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+  border-radius: var(--lumo-border-radius-m);
+  margin: 4px 0;
+  transition: all 0.2s ease;
+}
+
+vaadin-side-nav-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+vaadin-side-nav-item[active] {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: 600;
+}
+
+vaadin-side-nav-item vaadin-icon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+vaadin-side-nav-item[active] vaadin-icon,
+vaadin-side-nav-item:hover vaadin-icon {
+  color: #fff;
+}
+
+/* App name in drawer */
+vaadin-app-layout::part(drawer) span {
+  color: #fff;
+}
+
+vaadin-app-layout::part(drawer) vaadin-icon {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Form layout styling */
+vaadin-form-layout {
+  background: var(--card-bg);
+  padding: var(--lumo-space-l);
+  border-radius: var(--lumo-border-radius-l);
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(10px);
+}
+
+/* Button enhancements */
+vaadin-button[theme~="primary"] {
+  background: linear-gradient(135deg, var(--lumo-primary-color) 0%, hsl(var(--primary-hue), var(--primary-saturation), 35%) 100%);
+  box-shadow: 0 4px 12px hsla(var(--primary-hue), var(--primary-saturation), 42%, 0.35);
+  transition: all 0.2s ease;
+}
+
+vaadin-button[theme~="primary"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px hsla(var(--primary-hue), var(--primary-saturation), 42%, 0.45);
+}
+
+/* Text field styling */
+vaadin-text-field::part(input-field),
+vaadin-email-field::part(input-field),
+vaadin-text-area::part(input-field),
+vaadin-number-field::part(input-field),
+vaadin-date-picker::part(input-field),
+vaadin-combo-box::part(input-field) {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+vaadin-text-field:focus-within::part(input-field),
+vaadin-email-field:focus-within::part(input-field),
+vaadin-text-area:focus-within::part(input-field),
+vaadin-number-field:focus-within::part(input-field),
+vaadin-date-picker:focus-within::part(input-field),
+vaadin-combo-box:focus-within::part(input-field) {
+  border-color: var(--lumo-primary-color);
+  box-shadow: 0 0 0 3px var(--lumo-primary-color-10pct);
+}
+
+/* Chat message bubbles */
+.chat-bubble-user {
+  background: linear-gradient(135deg, var(--lumo-primary-color) 0%, hsl(var(--primary-hue), var(--primary-saturation), 35%) 100%);
+  color: white;
+  border-radius: 18px 18px 4px 18px;
+}
+
+.chat-bubble-assistant {
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px 18px 18px 4px;
+}
+
+/* Scroller for chat */
+vaadin-scroller {
+  border-radius: var(--lumo-border-radius-l);
+}
+
+/* Grid styling */
+vaadin-grid {
+  background: var(--card-bg);
+  border-radius: var(--lumo-border-radius-l);
+  box-shadow: var(--card-shadow);
+  border: none;
+}
+
+vaadin-grid::part(header-cell) {
+  background: rgba(0, 0, 0, 0.02);
+  font-weight: 600;
+}
+
+/* Notification styling */
+vaadin-notification-card {
+  border-radius: var(--lumo-border-radius-l);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Toolbar styling */
+header {
+  background: var(--card-bg);
+  border-radius: var(--lumo-border-radius-l);
+  box-shadow: var(--card-shadow);
+  padding: var(--lumo-space-m) var(--lumo-space-l);
+  backdrop-filter: blur(10px);
+}
+
+/* Page title */
+header h1 {
+  background: linear-gradient(135deg, hsl(var(--primary-hue), var(--primary-saturation), 30%) 0%, hsl(var(--primary-hue), var(--primary-saturation), 45%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Drawer toggle */
+vaadin-drawer-toggle {
+  color: var(--lumo-primary-text-color);
+}
+
+/* Animation for page transitions */
+main {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  vaadin-form-layout {
+    padding: var(--lumo-space-m);
+  }
+  
+  header {
+    padding: var(--lumo-space-s) var(--lumo-space-m);
+  }
+}

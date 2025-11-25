@@ -1,0 +1,83 @@
+/* Personal AI Assistant Theme */
+
+/* Custom color scheme - teal/cyan accent */
+html {
+  --lumo-primary-color: hsl(180, 70%, 40%);
+  --lumo-primary-color-50pct: hsla(180, 70%, 40%, 0.5);
+  --lumo-primary-color-10pct: hsla(180, 70%, 40%, 0.1);
+  --lumo-primary-text-color: hsl(180, 70%, 35%);
+}
+
+/* Chat message styling */
+.chat-user-message {
+  background: var(--lumo-primary-color);
+  color: white;
+  border-radius: 16px 16px 4px 16px;
+  padding: 12px 16px;
+  max-width: 75%;
+  margin-left: auto;
+}
+
+.chat-assistant-message {
+  background: var(--lumo-contrast-5pct);
+  border-radius: 16px 16px 16px 4px;
+  padding: 12px 16px;
+  max-width: 75%;
+  margin-right: auto;
+}
+
+/* Floating action button style */
+.assistant-fab {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.assistant-fab:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Knowledge base cards */
+.knowledge-card {
+  background: var(--lumo-base-color);
+  border: 1px solid var(--lumo-contrast-10pct);
+  border-radius: var(--lumo-border-radius-l);
+  padding: var(--lumo-space-m);
+  transition: box-shadow 0.2s ease;
+}
+
+.knowledge-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tag styling */
+.tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: var(--lumo-font-size-xs);
+  background: var(--lumo-primary-color-10pct);
+  color: var(--lumo-primary-text-color);
+  margin: 2px;
+}
+
+/* Status badges */
+.status-active {
+  background: var(--lumo-success-color-10pct);
+  color: var(--lumo-success-text-color);
+}
+
+.status-inactive {
+  background: var(--lumo-contrast-10pct);
+  color: var(--lumo-secondary-text-color);
+}
+
+/* Smooth scrolling for chat */
+.chat-messages {
+  scroll-behavior: smooth;
+}
+
+/* Header gradient */
+.app-header {
+  background: linear-gradient(135deg, var(--lumo-primary-color-10pct) 0%, var(--lumo-base-color) 100%);
+}

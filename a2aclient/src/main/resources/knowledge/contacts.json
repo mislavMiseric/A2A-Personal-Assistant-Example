@@ -1,0 +1,63 @@
+[
+  {
+    "id": "ante-antic",
+    "firstName": "Ante",
+    "lastName": "Antić",
+    "email": "ante.antic@example.com",
+    "phone": "+385 91 234 5678",
+    "company": "Antić Solutions d.o.o.",
+    "position": "CEO",
+    "address": "Ilica 123, 10000 Zagreb, Croatia",
+    "notes": "Long-time business partner. Prefers email communication. Best time to contact: mornings.",
+    "tags": ["business", "partner", "croatia", "tech"]
+  },
+  {
+    "id": "marko-markovic",
+    "firstName": "Marko",
+    "lastName": "Marković",
+    "email": "marko.markovic@techcorp.hr",
+    "phone": "+385 98 765 4321",
+    "company": "TechCorp d.o.o.",
+    "position": "CTO",
+    "address": "Heinzelova 44, 10000 Zagreb, Croatia",
+    "notes": "Expert in cloud architecture. Met at DevDays conference 2024.",
+    "tags": ["tech", "cloud", "conference"]
+  },
+  {
+    "id": "ana-horvat",
+    "firstName": "Ana",
+    "lastName": "Horvat",
+    "email": "ana.horvat@designstudio.com",
+    "phone": "+385 99 111 2222",
+    "company": "Design Studio",
+    "position": "Lead Designer",
+    "address": "Tkalčićeva 15, 10000 Zagreb, Croatia",
+    "notes": "Excellent UX/UI designer. Available for freelance projects.",
+    "tags": ["design", "ux", "freelance"]
+  },
+  {
+    "id": "ivan-ivic",
+    "firstName": "Ivan",
+    "lastName": "Ivić",
+    "email": "ivan.ivic@startup.io",
+    "phone": "+385 91 333 4444",
+    "company": "StartupHub",
+    "position": "Founder",
+    "address": "Radnička cesta 80, 10000 Zagreb, Croatia",
+    "notes": "Serial entrepreneur. Interested in AI and automation projects.",
+    "tags": ["startup", "ai", "investor"]
+  },
+  {
+    "id": "petra-petric",
+    "firstName": "Petra",
+    "lastName": "Petrić",
+    "email": "petra.petric@lawfirm.hr",
+    "phone": "+385 98 555 6666",
+    "company": "Petrić & Partners Law Firm",
+    "position": "Senior Partner",
+    "address": "Vukovarska 222, 10000 Zagreb, Croatia",
+    "notes": "Corporate law specialist. Handles all our legal matters.",
+    "tags": ["legal", "corporate", "trusted"]
+  }
+]
+

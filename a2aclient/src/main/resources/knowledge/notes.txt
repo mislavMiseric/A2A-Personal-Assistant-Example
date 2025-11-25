@@ -1,0 +1,36 @@
+# Personal Notes and Quick Reference
+
+## Important Reminders
+- Always use formal address (Vi) in Croatian business emails
+- Check calendar before scheduling any meetings
+- Send weekly progress reports to clients on Fridays
+
+## Common Tasks for Agents
+When submitting contact forms on agent servers:
+- Use data from contacts.json for person details
+- Always include company name if available
+- Add relevant context in the message field
+
+## Meeting Notes - Last Sync with Ante Antić (2024-11-15)
+- Discussed potential collaboration on AI automation project
+- He's interested in integrating our solutions with their existing systems
+- Follow-up scheduled for end of November
+- Budget discussion: 50-100k EUR range
+
+## Ideas for Future Projects
+1. Personal finance tracker with AI insights
+2. Automated email response system
+3. Knowledge base chatbot for documentation
+
+## Frequently Used Phrases
+- Support ticket subject prefix: "[URGENT]" for critical issues
+- Email greeting: "Poštovani/Poštovana [Name],"
+- Email closing: "S poštovanjem, Matej Mišerić"
+
+## Agent Interaction Guidelines
+When communicating with A2A agent servers:
+1. Always check agent capabilities first
+2. Provide complete required fields
+3. Use appropriate priority levels for support tickets
+4. Include context about the request when using natural language
+
